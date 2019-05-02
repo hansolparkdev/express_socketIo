@@ -11,7 +11,7 @@ app.get('/', function(req, res){
 io.on('connection', function(socket){
 
    socket.on('login', function(data){
-     console.log('client logged-in:\n name : ' + data.name + '\n userid : ' + data.userid);
+     console.log('client logged-in : \n name : ' + data.name + '\n userid : ' + data.userid);
 
      socket.name = data.name;
      socket.userid = data.userid;
